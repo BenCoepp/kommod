@@ -87,5 +87,11 @@ public class DoctorElement {
         }else{
             System.out.println("[!] " + this.title + " ( " + this.description + " )");
         }
+
+        if(verbose){
+            System.out.println(this.output.replace("\n",""));
+            System.out.println("Executed: " + this.executed);
+            System.out.println("Saved: " + this.saved);
+        }
     }
 }

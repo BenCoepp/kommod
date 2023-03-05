@@ -34,7 +34,7 @@ public class DoctorCommand implements Callable<Integer> {
     @Override
     public Integer call() throws Exception {
         boolean ok = true;
-        System.out.println("Doctor summary (to see all details, run kommod doctor -v):");
+        System.out.println("Doctor summary (to see all details, run kommod doctor -v):\n");
         checkDocker();
         return ok ? 0 : 1;
     }
