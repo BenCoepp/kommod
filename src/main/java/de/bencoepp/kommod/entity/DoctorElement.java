@@ -1,7 +1,6 @@
 package de.bencoepp.kommod.entity;
 
-import jakarta.persistence.*;
-
+import javax.persistence.*;
 import java.time.Instant;
 
 @Entity
@@ -9,6 +8,7 @@ public class DoctorElement {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
     private String title;
     private String description;
     private String command;

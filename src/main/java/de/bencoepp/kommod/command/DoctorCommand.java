@@ -5,7 +5,6 @@ import de.bencoepp.kommod.repository.DoctorElementRepository;
 import de.bencoepp.kommod.utils.CommandHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import picocli.CommandLine;
-
 import java.io.IOException;
 import java.time.Instant;
 import java.util.concurrent.Callable;
