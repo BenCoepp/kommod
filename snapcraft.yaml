@@ -8,7 +8,7 @@ description: |
   production use. Please note that at this time this tool is still under development...
 grade: stable
 confinement: strict
-base: core22
+base: core18
 
 website: https://github.com/BenCoepp/kommod
 issues: https://github.com/BenCoepp/kommod/issues
