@@ -18,13 +18,13 @@ architectures:
   - build-on: amd64
 
 apps:
-  probatio:
+  kommod:
     command:
       java -jar -Duser.home=$SNAP_USER_DATA $SNAP/jar/kommod-0.0.1-SNAPSHOT.jar
     plugs: [ home, network]
 
 parts:
-  probatio:
+  kommod:
     source: https://github.com/BenCoepp/kommod.git
     source-tag: main
     source-type: git
