@@ -34,22 +34,24 @@ public class DoctorCommand implements Callable<Integer> {
     @Override
     public Integer call() throws Exception {
         boolean ok = true;
-        System.out.println(doctorElementRepository.count());
+        System.out.println("Doctor summary (to see all details, run kommod doctor -v):");
+        checkDocker();
         return ok ? 0 : 1;
     }
 
     private void checkDocker() throws IOException {
         DoctorElement element = new DoctorElement();
-        element.setTitle("Doctor");
-        element.setDescription("Check if Docker is installed and what version you are currently running");
+        element.setTitle("Docker");
         element.setCommand("docker --version");
         element.setExecuted(Instant.now());
         element.setOutput(CommandHelper.execCmd(element.getCommand()));
 
-        if(element.getOutput().contains("")){
+        if(element.getOutput().contains("Docker version ")){
             element.setOk(true);
+            element.setDescription(element.getOutput().replace("\n",""));
         }else{
             element.setOk(false);
+            element.setDescription("Currently not installed");
         }
 
         element.setSaved(Instant.now());

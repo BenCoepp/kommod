@@ -82,6 +82,10 @@ public class DoctorElement {
     }
 
     public void print(boolean verbose){
-
+        if(ok){
+            System.out.println("[√] " + this.title + " ( " + this.description + " )");
+        }else{
+            System.out.println("[!] " + this.title + " ( " + this.description + " )");
+        }
     }
 }
