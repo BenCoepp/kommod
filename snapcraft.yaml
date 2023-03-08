@@ -2,9 +2,8 @@
 name: kommod
 title: kommod
 version: '0.0.1'
-summary: The all in one project analyzer
-description: |
-  This tool is mainly for two things, analyzing your projects and auditing them. Please note that at this time this tool is still under development...
+summary: The all in one project debuger and analyzer
+description: This tool is for two specific propuses the first on is analyzing your projects based on a varity of different tools as well as issues. The second one is about helping you debug your projects for common issues and difficulties.
 grade: stable
 confinement: classic
 base: core18
