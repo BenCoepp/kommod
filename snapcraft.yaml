@@ -6,7 +6,7 @@ summary: The all in one project analyzer
 description: |
   This tool is mainly for two things, analyzing your projects and auditing them. Please note that at this time this tool is still under development...
 grade: stable
-confinement: strict
+confinement: classic
 base: core18
 
 website: https://github.com/BenCoepp/kommod
